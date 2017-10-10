@@ -9,91 +9,102 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Reconnaitre un manchot</h1>
-    <h5>Neuf espèces parmi les 18 existantes</h5>
+    <main class="container">
+      <h1>Reconnaitre un manchot</h1>
+      <h5>Neuf espèces parmi les 18 existantes</h5>
 
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Manchot de Magellan</a>
-        <img src="GitHub/session-6/assets/megellanic.svg" />
-        <p> Nom: Manchot de Magellan <br>
-          Nom latin: Spheniscus magellanicus </br>
-          Originaire de: Argentine, Brésil, Chili, Pérou, Uruguay </br>
-          Observé: Antarctique, Australie, Nouvelle-Zélande </br>
-          Statut: Presque menacé </br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot de Humboldt</a>
-        <p> Nom: Manchot de Humboldt <br>
-          Nom latin: Spheniscus humboldti <br>
-          Originaire de: Chili, Pérou, Uruguay <br>
-          Observé: Colombie, Équateur <br>
-          Statut: Vulnérable <br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot Empereur</a>
-        <p> Nom: Manchot empereur <br>
-          Nom latin: Aptenodytes forsteri <br>
-          Originaire de: Antarctique <br>
-          Observé: Argentine, Chili, Nouvelle-Zélande <br>
-          Statut: Presque menacé <br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot Royal</a>
-        <p> Nom: Manchot royal <br>
-          Nom latin: Aptenodytes patagonicus <br> 
-          Originaire de: Argentine, Chili, Afrique-du-Sud <br>
-          Observé: Antarctique, Australie, Brésil, Nouvelle-Zélande, Uruguay <br>
-          Statut: Préoccupation mineure <br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Manchot du Cap</a>
-        <p> Nom: Manchot du Cap <br> 
+      <section class="row">
+
+        <div class="nav flex-column nav-pills col-4" id="v-pills-tab" role="tablist">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-magellan" role="tab" aria-controls="v-pills-home" aria-expanded="true">Manchot de Magellan</a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-humboldt" role="tab" aria-controls="v-pills-profile" aria-expanded="true">Manchot de Humboldt</a>
+          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-empereur" role="tab" aria-controls="v-pills-messages" aria-expanded="true">Manchot Empereur</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-royal" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Manchot Royal</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-cap" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Manchot du Cap</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-jugulaire" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Manchot à jugulaire</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-papou" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Manchot papou</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-moseley" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Gorfou de Moseley</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-adelie" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Manchot Adélie</a>
+        </div>
+
+        <div class="tab-content col-8 col-sm-6 col-md-4" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-magellan" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/megellanic.svg" />
+            <p> Nom: Manchot de Magellan <br>
+              Nom latin: Spheniscus magellanicus </br>
+              Originaire de: Argentine, Brésil, Chili, Pérou, Uruguay </br>
+              Observé: Antarctique, Australie, Nouvelle-Zélande </br>
+              Statut: Presque menacé </br> </p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-humboldt" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <img src="assets/humboldt.svg" />
+            <p> Nom: Manchot de Humboldt <br>
+              Nom latin: Spheniscus humboldti <br>
+              Originaire de: Chili, Pérou, Uruguay <br>
+              Observé: Colombie, Équateur <br>
+              Statut: Vulnérable <br> </p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-empereur" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <img src="assets/emperor.svg" />
+            <p> Nom: Manchot empereur <br>
+              Nom latin: Aptenodytes forsteri <br>
+              Originaire de: Antarctique <br>
+              Observé: Argentine, Chili, Nouvelle-Zélande <br>
+              Statut: Presque menacé <br> </p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-royal" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <img src="assets/king.svg" />
+            <p> Nom: Manchot royal <br>
+              Nom latin: Aptenodytes patagonicus <br> 
+              Originaire de: Argentine, Chili, Afrique-du-Sud <br>
+              Observé: Antarctique, Australie, Brésil, Nouvelle-Zélande, Uruguay <br>
+              Statut: Préoccupation mineure <br> </p>
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-cap" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/african.svg" />
+            <p>  Nom: Manchot du Cap <br> 
             Nom latin: Spheniscus demersus <br> 
             Originaire de: Angola, Namibie, Afrique-du-Sud <br> 
             Observé: Congo, Gabon <br> 
-            Statut: En danger <br> 
-          </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot à jugulaire</a>
-        <p> Nom: Manchot à jugulaire <br> 
+            Statut: En danger <br> </p>
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-jugulaire" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/chinstrap.svg"" />
+            <p>  <p> Nom: Manchot à jugulaire <br> 
             Nom latin: Pygoscelis antarcticus <br> 
             Originaire de: Antarctique, Argentine, Chili <br> 
             Observé: Australie, Nouvelle-Zélande, Afrique-du-Sud <br> 
-            Statut: Préoccupation mineure <br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot papou</a>
-        <p> Nom: Manchot papou <br>
+            Statut: Préoccupation mineure <br> </p></p>
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-papou" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/gentoo.svg" />
+            <p> Nom: Manchot papou <br>
             Nom latin: Pygoscelis papua <br>
             Originaire de: Antarctique, Argentine, Australie (île Macquarie), Chili <br>
             Observé: Nouvelle-Zélande <br>
             Statut: Préoccupation mineure <br> </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Gorfou de Moseley</a>
-        <p> Nom: Gorfou de Moseley <br> 
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-moseley" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/rockhopper.svg" />
+            <p>  Nom: Gorfou de Moseley <br> 
             Nom latin: Eudyptes moseleyi <br> 
             Originaire de: Îles de l'Atlantique-sud et Océan indien <br>
             Observé: Îles Malouines, Afrique-du-Sud <br> 
-            Statut: En danger <br>  </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Manchot Adélie</a>
-        <p> Nom: Manchot Adélie <br> 
+            Statut: En danger <br> </p>
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-adelie" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <img src="assets/adelie.svg" />
+            <p>  Nom: Manchot Adélie <br> 
             Nom latin: Pygoscelis adeliae <br> 
             Originaire de: Antarctique <br> 
             Observé: Argentine, Australie, Nouvelle-Zélande <br> 
             Statut: Préoccupation mineure <br> </p>
-      </li>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <p> Nom: Manchot de Magellan <br>
-          Nom latin: Spheniscus magellanicus </br>
-          Originaire de: Argentine, Brésil, Chili, Pérou, Uruguay </br>
-          Observé: Antarctique, Australie, Nouvelle-Zélande </br>
-          Statut: Presque menacé </br> </p>
-</ul>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
